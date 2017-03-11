@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>Images/xinhuanet.gif</ImageUrl>
+    <NavigateUrl>http:www.xinhuanet.com</NavigateUrl>
+    <AlternateText>新华网</AlternateText>
+    <Impressions>3</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Image/dangdang.jpg</ImageUrl>
+    <NavigateUrl>http:www.dangdang.com</NavigateUrl>
+    <AlternateText>当当网</AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+</Advertisements>

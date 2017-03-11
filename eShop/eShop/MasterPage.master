@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table width="100%" cellspacing="0">
+        <tr>
+            <td align="center" style ="background-image:url('Images/bgImage1.gif');font-size:x-large;"
+                height="55" width="100%">
+                欢迎光临网上商场，项目设计：林超强 email:928267496@qq.com
+            </td>
+        </tr>
+    </table>
+    <table width="100%" cellspacing="0">
+        <tr>
+            <td>
+                <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Banner.xml" 
+                    Target="_blank" />
+            </td>
+            <td align="right">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Width="600px">
+                    <Items>
+                        <asp:MenuItem Text="商城首页" Value="商城首页" NavigateUrl="~/Products.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="购物车" Value="购物车" NavigateUrl="~/ShoppingCart.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="我的订单 " Value="我的订单 " NavigateUrl="~/MyOrders.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="注册" Value="注册" NavigateUrl="~/Regist.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="登录 " Value="登录 " NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" cellspacing="0">
+      <tr>
+        <td>
+            <asp:Label ID="lblUserName" runat="server"></asp:Label>
+        </td>
+        <td align="right">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uim=237021692&site=qq&menu=yes">
+        <img border="0" src="images/qq.gif" alt="点击这里给我留言"title="点击这里给我留言" />
+        </a>
+        </td>
+      </tr>
+    </table>
+    <hr />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
